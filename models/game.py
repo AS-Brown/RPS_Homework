@@ -16,3 +16,18 @@ def run_game(player1, player2):
         return player2
     return player1
     
+def simple_game(first, second):
+    winner_list = []
+    if first == second:
+        return None
+    elif first == "rock" and second == "paper":
+        winner_list=['Player2', second]
+        return winner_list
+    elif first == "paper" and second == "scissors":
+        winner_list=['Player2', second]
+        return winner_list
+    elif first == "scissors" and second == "rock":
+        winner_list=['Player2', second]
+        return winner_list
+    winner_list=["Player1", first]
+    return winner_list
