@@ -1,27 +1,41 @@
 {% extends 'base.html' %}
 {% block multiplayer %}
 <form action="/multiplayer" method="post">
+    <div id='Player1'>
     <label for="name">Player name</label>
     <input type="text" name="name" id="name">
 
-    <label for="choice">Make your choice</label>
-    <select id="choice" name="choice">
-      <option value="rock">Rock</option>
-      <option value="paper">Paper</option>
-      <option value="scissors">Scissors</option>
-    </select>
-    <br>
+    <p>Please make your choice</p>
+    <input type="radio" id="rock" name="choice" value="rock" class="radio_item">
+    <label class="label_item" for="rock"> <img src="https://m.media-amazon.com/images/I/61Fbl8PSoBL._AC_SX679_.jpg"> </label>
+
+    <input type="radio" id="paper" name="choice" value="paper" class="radio_item">
+    <label class="label_item" for="paper"> <img src="https://www.collinsdictionary.com/images/full/paper_111691001.jpg"> </label>
+
+    <input type="radio" id="scissors" name="choice" value="scissors" class="radio_item">
+    <label class="label_item" for="scissors"> <img src="https://cdn.images.fecom-media.com/FE00015871/images/HE1815179_1426638-GLS-STA-P01.jpg?width=348&height=348&scale=UpscaleCanvas&anchor=MiddleCenter"> </label>
+    </div>
+
+
+    <div id='Player2'> 
     <label for="name2">Player name</label>
     <input type="text" name="name2" id="name2">
 
-    <label for="choice2">Make your choice</label>
-    <select id="choice2" name="choice2">
-      <option value="rock">Rock</option>
-      <option value="paper">Paper</option>
-      <option value="scissors">Scissors</option>
-    </select>
+    <p>Please make your choice</p>
+    <input type="radio" id="rock2" name="choice2" value="rock" class="radio_item">
+    <label class="label_item" for="rock2"> <img src="https://m.media-amazon.com/images/I/61Fbl8PSoBL._AC_SX679_.jpg"> </label>
 
-    <input type="submit">
+    <input type="radio" id="paper2" name="choice2" value="paper" class="radio_item">
+    <label class="label_item" for="paper2"> <img src="https://www.collinsdictionary.com/images/full/paper_111691001.jpg"> </label>
+
+    <input type="radio" id="scissors2" name="choice2" value="scissors" class="radio_item">
+    <label class="label_item" for="scissors2"> <img src="https://cdn.images.fecom-media.com/FE00015871/images/HE1815179_1426638-GLS-STA-P01.jpg?width=348&height=348&scale=UpscaleCanvas&anchor=MiddleCenter"> </label>
+    </div>
+
+
+
+
+    <input id='submit' type="submit">
 </form>
 
 

@@ -1,0 +1,23 @@
+    .radio_item{
+    display: none !important;
+    }
+
+    .label_item {
+    opacity: 1; /* note to self: change this to below 1 but above 0 if you want the image to be transparent before clicking it*/
+    }
+
+    .radio_item:checked + label {
+        opacity: 1;
+        }
+
+label {
+    cursor: pointer;   
+    }
+
+#Player1{
+    float:left
+}
+
+img{
+    width:100px;
+}

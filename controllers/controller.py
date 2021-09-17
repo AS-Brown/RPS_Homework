@@ -42,9 +42,9 @@ def make_multiplayer_results():
     player_number=request.form['name']
     choice=request.form['choice']
     new_player=Player(player_number,choice)
-    player_number=request.form['name2']
-    choice=request.form['choice2']
-    new_player2=Player(player_number,choice)
+    player_number2=request.form['name2']
+    choice2=request.form['choice2']
+    new_player2=Player(player_number2,choice2)
     victory=run_game(new_player, new_player2)
     if victory == None:
         return render_template('winner.html', winner="nobody", winning_move="a draw")
