@@ -5,7 +5,11 @@ from models.player import *
 
 @app.route('/')
 def home_route():
-    return render_template('base.html', title='Base')
+    return render_template('index.html')
+
+@app.route('/welcome')
+def welcome_route():
+    return render_template('welcome.html')
 
 @app.route('/<choice1>/<choice2>')
 def show_results(choice1, choice2):
