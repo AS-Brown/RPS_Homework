@@ -1,12 +1,12 @@
-    .radio_item{
+.radio_item{
     display: none !important;
     }
 
-    .label_item {
+.label_item {
     opacity: 1; /* note to self: change this to below 1 but above 0 if you want the image to be transparent before clicking it*/
     }
 
-    .radio_item:checked + label {
+.radio_item:checked + label {
         opacity: 1;
         }
 
@@ -20,4 +20,21 @@ label {
 
 img{
     width:100px;
+}
+
+body{
+    background-image:url("https://i.pinimg.com/originals/83/45/e7/8345e727d9e1ff7491bf5cbde73074b5.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+.middle{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color:antiquewhite;
+    width:40%;
+
 }

@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block play %}
+<link rel="stylesheet" href="{{ url_for('static', filename='play.css') }}">
 <form action="/play" method="post">
     <label for="name">Player name</label>
     <input type="text" name="name" id="name">
@@ -15,6 +16,6 @@
 </form>
 
 
-<p><a href="/">Return back home</a></p>
+
 
 {% endblock play%}

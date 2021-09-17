@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
 </head>
 <body>
+    <div class="middle">   
     <h1>Rock, Paper, Scissors!</h1>
-        {% block play %}
-
-        {% endblock play%}
-        {% block multiplayer %}
-
-        {% endblock multiplayer%}
+ 
         <p><a href="/welcome">Rules</a></p>
         <p><a href="/play">Play Rock, Paper, Scissors with the computer</a></p>
         <p><a href="/multiplayer">Play Rock, Paper, Scissors with another person</a></p>
+        <p><a href="/">Return back home</a></p>
+    </div>
+    {% block play %}
+
+    {% endblock play%}
+    {% block multiplayer %}
+
+    {% endblock multiplayer%}
 </body>
 </html>
