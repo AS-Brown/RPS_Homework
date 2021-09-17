@@ -8,6 +8,14 @@
 </head>
 <body>
     <h1>Rock, Paper, Scissors!</h1>
-    <p><a href="/welcome">Welcome page</a></p>
+        {% block play %}
+
+        {% endblock play%}
+        {% block multiplayer %}
+
+        {% endblock multiplayer%}
+        <p><a href="/welcome">Rules</a></p>
+        <p><a href="/play">Play Rock, Paper, Scissors with the computer</a></p>
+        <p><a href="/multiplayer">Play Rock, Paper, Scissors with another person</a></p>
 </body>
 </html>

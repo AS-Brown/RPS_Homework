@@ -1,9 +1,17 @@
 from models.player import Player
+import random 
 
 class Game:
     def __init__(self, choice1, choice2):
         self.choice1 = choice1
         self.choice2 = choice2
+
+def make_computer():
+    computer_name="UNIT 01"
+    possible_choices = ["rock","paper","scissors"]
+    computer_choice = random.choice(possible_choices)
+    computer=Player(computer_name, computer_choice)
+    return computer
 
 def run_game(player1, player2):
     if player1.choice == player2.choice:
@@ -17,17 +25,17 @@ def run_game(player1, player2):
     return player1
     
 def simple_game(first, second):
-    winner_list = []
     if first == second:
         return None
     elif first == "rock" and second == "paper":
-        winner_list=['Player2', second]
+        winner_list=Player('Player2', second)
         return winner_list
     elif first == "paper" and second == "scissors":
-        winner_list=['Player2', second]
+        winner_list=Player('Player2', second)
         return winner_list
     elif first == "scissors" and second == "rock":
-        winner_list=['Player2', second]
+        winner_list=Player('Player2', second)
         return winner_list
-    winner_list=["Player1", first]
+    winner_list=Player('Player1', first)
     return winner_list
+

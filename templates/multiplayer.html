@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block multiplayer %}
+<form action="/multiplayer" method="post">
+    <label for="name">Player name</label>
+    <input type="text" name="name" id="name">
+
+    <label for="choice">Make your choice</label>
+    <select id="choice" name="choice">
+      <option value="rock">Rock</option>
+      <option value="paper">Paper</option>
+      <option value="scissors">Scissors</option>
+    </select>
+    <br>
+    <label for="name2">Player name</label>
+    <input type="text" name="name2" id="name2">
+
+    <label for="choice2">Make your choice</label>
+    <select id="choice2" name="choice2">
+      <option value="rock">Rock</option>
+      <option value="paper">Paper</option>
+      <option value="scissors">Scissors</option>
+    </select>
+
+    <input type="submit">
+</form>
+
+
+<p><a href="/">Return back home</a></p>
+
+
+
+
+
+{% endblock multiplayer%}
