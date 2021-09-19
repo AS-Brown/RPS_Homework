@@ -2,6 +2,7 @@ from flask import render_template, request
 from app import app
 from models.game import *
 from models.player import *
+from static import *
 
 @app.route('/')
 def home_route():

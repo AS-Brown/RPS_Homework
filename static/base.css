@@ -14,16 +14,8 @@ label {
     cursor: pointer;   
     }
 
-#Player1{
-    float:left
-}
-
-img{
-    width:100px;
-}
-
 body{
-    background-image:url("https://i.pinimg.com/originals/83/45/e7/8345e727d9e1ff7491bf5cbde73074b5.jpg");
+    background-image:url("/static/images/background.jpeg");
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:cover;
@@ -37,4 +29,13 @@ body{
     background-color:antiquewhite;
     width:40%;
 
+}
+
+#champ{
+    margin:auto;
+    width:100%;
+    padding-left:37%
+}
+#champ img{
+    width:27%;
 }

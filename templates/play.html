@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block play %}
 <link rel="stylesheet" href="{{ url_for('static', filename='play.css') }}">
+<div id="player_one_form">
 <form action="/play" method="post">
     <label for="name">Player name</label>
     <input type="text" name="name" id="name">
@@ -14,8 +15,8 @@
 
     <input type="submit">
 </form>
-
-
-
+</div>
+<img id="cowboy_left" src="/static/images/player_one.png">
+<img id="robot_right" src="/static/images/robot.png">
 
 {% endblock play%}

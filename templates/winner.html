@@ -15,6 +15,14 @@
     <p><a href="/multiplayer">Play Rock, Paper, Scissors with another person</a></p>
     <p><a href="/">Return back home</a></p>
     </div>
-
+    <div id="champ">
+    {% if winner == "UNIT 01" %}
+    <img src="/static/images/robot.png">
+    {% elif winner == "nobody" %}
+    <img src="/static/images/tumbleweed.png">
+    {% else %}
+    <img src="/static/images/player_one.png">
+    {% endif %}
+    </div>
 </body>
 </html>

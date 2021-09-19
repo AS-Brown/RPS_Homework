@@ -1,0 +1,24 @@
+#cowboy_left{
+    width:27%;
+}
+
+#robot_right{
+    width:30%;
+    float:right;
+}
+
+#Player1{
+    float:left;
+    text-align: center;
+}
+
+img{
+    width:100px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#Player2{
+    float:right;
+    text-align: center;
+}
