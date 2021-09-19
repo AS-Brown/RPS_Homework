@@ -15,6 +15,7 @@ label {
     }
 
 body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image:url("/static/images/background.jpeg");
     background-repeat:no-repeat;
     background-attachment:fixed;
