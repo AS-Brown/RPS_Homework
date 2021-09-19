@@ -23,10 +23,12 @@ img{
     text-align: center;
 }
 input[type=submit] {
-    width: 200px; 
-    height: 50px;
-    justify-content:center;
-    margin-left: 70px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color:antiquewhite;
+    width:40%;
 }
 
 .outline{
