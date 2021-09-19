@@ -2,7 +2,7 @@ from flask import render_template, request
 from app import app
 from models.game import *
 from models.player import *
-from static import *
+
 
 @app.route('/')
 def home_route():
@@ -36,7 +36,7 @@ def make_results():
     victory=run_game(new_player, computer)
     if victory == None:
         return render_template('winner.html', winner="nobody", winning_move="a draw")
-    return render_template('winner.html', winner=victory.player_number, winning_move=victory.choice)
+    return render_template('winner.html', winner=victory.player_number, winning_move=victory.choice, image_of_victor=victory.status)
 
 @app.route('/multiplayer', methods=['POST'])
 def make_multiplayer_results():
@@ -46,7 +46,8 @@ def make_multiplayer_results():
     player_number2=request.form['name2']
     choice2=request.form['choice2']
     new_player2=Player(player_number2,choice2)
+    new_player2.status += 1
     victory=run_game(new_player, new_player2)
     if victory == None:
         return render_template('winner.html', winner="nobody", winning_move="a draw")
-    return render_template('winner.html', winner=victory.player_number, winning_move=victory.choice)
+    return render_template('winner.html', winner=victory.player_number, winning_move=victory.choice, image_of_victor=victory.status)

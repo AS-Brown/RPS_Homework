@@ -22,3 +22,14 @@ img{
     float:right;
     text-align: center;
 }
+input[type=submit] {
+    width: 200px; 
+    height: 50px;
+    justify-content:center;
+    margin-left: 70px;
+}
+
+.outline{
+    outline-color:red;
+    outline-style: solid;
+}

@@ -20,8 +20,10 @@
     <img src="/static/images/robot.png">
     {% elif winner == "nobody" %}
     <img src="/static/images/tumbleweed.png">
-    {% else %}
+    {% elif image_of_victor == 0%}
     <img src="/static/images/player_one.png">
+    {% elif image_of_victor == 1%}
+    <img src="/static/images/robot.png">
     {% endif %}
     </div>
 </body>

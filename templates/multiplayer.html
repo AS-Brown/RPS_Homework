@@ -3,39 +3,41 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='multiplayer.css') }}">
 <form action="/multiplayer" method="post">
     <div id='Player1'>
-    <label for="name">Player name</label>
+    <label for="name">Player name</label><br>
     <input type="text" name="name" id="name">
 
     <p>Please make your choice</p>
+    <div class="outline">
     <input type="radio" id="rock" name="choice" value="rock" class="radio_item">
-    <label class="label_item" for="rock"> <img src="https://m.media-amazon.com/images/I/61Fbl8PSoBL._AC_SX679_.jpg"> </label>
+    <label class="label_item" for="rock"> <img src="/static/images/rock.png"> </label>
     <br>
     <input type="radio" id="paper" name="choice" value="paper" class="radio_item">
-    <label class="label_item" for="paper"> <img src="https://www.collinsdictionary.com/images/full/paper_111691001.jpg"> </label>
+    <label class="label_item" for="paper"> <img src="/static/images/paper.png"> </label>
     <br>
     <input type="radio" id="scissors" name="choice" value="scissors" class="radio_item">
-    <label class="label_item" for="scissors"> <img src="https://cdn.images.fecom-media.com/FE00015871/images/HE1815179_1426638-GLS-STA-P01.jpg?width=348&height=348&scale=UpscaleCanvas&anchor=MiddleCenter"> </label>
-    
+    <label class="label_item" for="scissors"> <img src="/static/images/scissors.png""> </label>
+    </div>
 
     </div>
     <img id="cowboy_left" src="/static/images/player_one.png">
 
     <div id='Player2'> 
-    <label for="name2">Player name</label>
+    <label for="name2">Player name</label><br>
     <input type="text" name="name2" id="name2">
-
+  
     <p>Please make your choice</p>
+    <div class="outline">
     <input type="radio" id="rock2" name="choice2" value="rock" class="radio_item">
-    <label class="label_item" for="rock2"> <img src="https://m.media-amazon.com/images/I/61Fbl8PSoBL._AC_SX679_.jpg"> </label>
+    <label class="label_item" for="rock2"> <img src="/static/images/rock.png"> </label>
     <br>
     <input type="radio" id="paper2" name="choice2" value="paper" class="radio_item">
-    <label class="label_item" for="paper2"> <img src="https://www.collinsdictionary.com/images/full/paper_111691001.jpg"> </label>
+    <label class="label_item" for="paper2"> <img src="/static/images/paper.png"> </label>
     <br>
     <input type="radio" id="scissors2" name="choice2" value="scissors" class="radio_item">
-    <label class="label_item" for="scissors2"> <img src="https://cdn.images.fecom-media.com/FE00015871/images/HE1815179_1426638-GLS-STA-P01.jpg?width=348&height=348&scale=UpscaleCanvas&anchor=MiddleCenter"> </label>
+    <label class="label_item" for="scissors2"> <img src="/static/images/scissors.png"> </label>
     <br>
     </div>
-
+    </div>
 
     <img id="robot_right" src="/static/images/robot.png">
 
